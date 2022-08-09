@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+* {
+    font-family: 'Poppins',Helvetica, Arial, sans-serif;
+    background-color: #181716;
+    
+  }
+  
+  body {
+    padding: 60px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  form{
+    display: flex;
+  }
+  
+  input {
+    background-color: rgba(255, 255, 255, 0.796);
+    border-radius: 5px;
+    border: 2px solid #B39DDB;
+    color: #0f6e7b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    text-indent: 12px;
+    
+  
+  }
+
+  input[type=text]:focus{
+    border: 3px solid #B39DDB;
+    /* outline: 0 none; */
+    
+  }
+
+  input[type=text]:focus::placeholder{
+    color: transparent;
+  }
+
+  h1{
+    background: radial-gradient(circle, #F48FB1 0%,  #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: gradient 10s linear infinite alternate;
+  }
+
+  
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+  
+  h3 {
+    color: #B2EBF2;
+    text-align: center;
+    font-size:2.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 0 10px #0ba9ca, 0 0 5px #0ba9ca;
+    display: flex;
+    flex-direction: column;
+    height: 0%;  
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .card p {
+    background-color: white;
+    color:#0f6e7b;
+    flex: 1;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    transition: transform .4s;
+  }
+
+  .card img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+  }
+
+ i{
+  
+  font-size: 2.6rem;
+  position: absolute;
+  top: 165px;
+  right:85px;
+  color: #B39DDB;
+  background-color:transparent;
+  
+}
+
